@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     #navbar2{
+    width:100%;
+    height:90px;
+    /* border:2px solid red; */
+    margin:auto;
+    
+    
+    justify-content: center;
+    align-items: center;
+    position:static;
+    top:0;
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #navbar2>div{
+            width:20%;
+        }
+        #navbar2>div>img{
+    
+    width:100%;
+    height:auto;
+    justify-items: right;
+}
+        #login{
+            width:100%;
+            display:flex;
+            margin:auto;
+            /* border:2px solid green; */
+        }
+        #login>div{
+            width:40%;
+            height:470px;
+            /* border:2px solid red; */
+            margin:auto;
+            /* margin-top:30px; */
+           
+        }
+        #login>div:nth-child(1)>h1{
+           width:90%; 
+           font-family: nunito sans,sans-serif;
+           text-align: left;
+           font-size: 50px;
+           font-weight: bolder;
+           
+
+        }
+        #login>div:nth-child(1)>h2{
+            width:70%;
+            color: grey;
+            font-family: nunito sans,sans-serif;
+        }
+        #login>div:nth-child(1)>button{
+            padding:10px;
+            border:none;
+            background-color: #25cf60;
+            color:#fff;
+            border-radius: 40px;
+            font-family: nunito sans,sans-serif;
+            text-align: center;
+
+        }
+        #login>div:nth-child(1)>button>img{
+            width:10%;
+        }
+        #login>div>div{
+            display:flex;
+            margin-top:30px;
+        }
+        #login>div>div>div>img{
+            width:80%;
+
+        }
+
+        #login>div:nth-child(2){
+            text-align: center;
+            border-radius:20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            /* margin-bottom:30px; */
+            
+            
+        }
+        #login>div:nth-child(2)>h1{
+            font-family: nunito sans,sans-serif;
+            text-align: center;
+            font-size: 25px;
+            margin-top:30px;
+
+
+        }
+        #login>div:nth-child(2)>button{
+            border-radius:10px;
+            width:75%;
+            padding:10px;
+            border:1px;
+            font-family: nunito sans,sans-serif;
+            text-align: center;
+            font-size: 15px;
+            color: grey;
+        }
+        #login>div:nth-child(2)>input{
+            border-radius:10px;
+            width:70%;
+            padding:10px;
+            border:1px solid rgb(197, 193, 193);
+            font-family: nunito sans,sans-serif;
+            text-align: left;
+            font-size: 15px;
+            color: grey;
+            margin-bottom:10px;
+
+        }
+        #login>div:nth-child(2)>p{
+            font-family: nunito sans,sans-serif;
+
+        }
+        #login>div:nth-child(2)>button~button{
+            background-color: #25cf60;
+            color: #fff;
+            width:20%;
+            border-radius: 30px;
+            padding:15px;
+        }
+        #login>div:nth-child(2)>h3{
+            /* width:40%; */
+            color:#25cf60;
+            font-family: nunito sans,sans-serif;
+            font-size: 15px;
+        }
+        #login>div:nth-child(2)>button>img{
+            width:10%;
+        }
+        #login>div:nth-child(2)>button{
+            text-align: center;
+            /* margin-bottom:10px; */
+        }
+        #login>div:nth-child(2)>h3>a{
+            color:#25cf60;
+        }
+        #login>div:nth-child(2)>h3>i{
+            color:black
+        }
+
+        
+
+        
+
+
+   
+
+    </style>
+</head>
+<body>
+    <div id="navbar2">
+        <div>
+           
+            <img src="https://cdn-m.timecamp.com/img/greenbranding/press/timecamp-pr-materials/svg/colorLogo.svg" alt="">
+        </div>
+        </div>
+    <div id="login">
+        <div>
+            <h1>TimeCamp Plugin for Google Chrome</h1>
+            <h2>Track time without leaving Chrome in 70+ online apps.</h2>
+            <button> <img src="https://cdn.timecamp.com/res/css/images/chrome-icon-button.1661527359.png" alt=""> Add TimeCamp for  Chrome</button>
+            <div>
+                <div> <img src="https://cdn.timecamp.com/res/css/images/crozdesk-icon.1661527359.png" alt=""> </div>
+                <div> <img src="https://cdn.timecamp.com/res/css/images/capterra-icon.1661527359.png" alt=""> </div>
+                <div>  <img src="https://cdn.timecamp.com/res/css/images/crowd-icon.1661527359.png" alt=""></div>
+                <div>  <img src="https://cdn.timecamp.com/res/css/images/get-app-icon.1661527359.png" alt=""> </div>
+            </div>
+        </div>
+        <div>
+            <h1>Log in to TimeCamp</h1>
+            <button>  <img src="https://blog.hubspot.com/hubfs/image8-2.jpg" alt=""> Log in with Goggle</button><br>
+            <p>Or</p>
+            <input id="email" type="text" placeholder="Email">
+            <br>
+            <input id="Pass" type="text" placeholder="Password">
+            <h3>Forget password</h3>
+            <button id="btn">Login</button>
+            <h3>no account?<a href="./sign.html ">
+                Sign up
+              </a> <i>Or</i> login in with SSO</h3>
+        </div>
+    </div>
+    
+</body>
+
+</html>
+<script>
+     let login=JSON.parse(localStorage.getItem("signarr"))||[];
+
+    let button= document.querySelector("#btn")
+    button.addEventListener("click",sign);
+    function sign(){
+        // let email=document.querySelector("#email");
+        // let pass=document.querySelector("#pass")
+        // if( email&&pass==login){
+            alert("Login Successful")
+        
+        
+           
+            
+        }
+        
+
+    
+
+    
+
+</script>
